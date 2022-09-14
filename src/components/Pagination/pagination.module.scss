@@ -1,0 +1,31 @@
+.pagination {
+  display: flex;
+  gap: 50%;
+  align-items: center;
+  margin-top: 16px;
+  color: #83889d;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 400;
+
+  ul {
+    display: flex !important;
+    width: auto;
+    list-style-type: none;
+    color: #83889d;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+  }
+
+  ul li {
+    margin-right: 16px;
+  }
+}
+
+.activePaginate {
+  background: #1875f0;
+  border-radius: 2px;
+  padding: 0 8px;
+  color: #fff;
+}

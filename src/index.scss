@@ -1,0 +1,68 @@
+@font-face {
+  font-family: Imported;
+  src: url('assets/fonts/SegoeUI.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: Imported, sans-serif;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 0fr);
+  gap: 1%;
+  margin-left: -3.5rem;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  gap: 2%;
+  margin-top: 2rem;
+  margin-left: -3.5rem;
+}
+
+.item__card {
+  padding-right: 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 7%;
+}
+
+.payment {
+  font-size: 26px;
+  line-height: 48px;
+}
+
+.table__body {
+  box-shadow: 0 0 27px 0 rgba(214, 231, 233, 0.52);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.item__table {
+  margin-right: 10rem;
+  &_initial {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+  }
+  &_span {
+    padding-top: 2%;
+  }
+  &__status {
+    display: flex;
+    gap: 7%;
+
+    &_active {
+      position: relative;
+      top: -0.5rem;
+    }
+  }
+}
+
+.filter__item {
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  gap: 13%;
+}

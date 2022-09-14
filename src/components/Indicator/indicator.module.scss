@@ -1,0 +1,33 @@
+.indicator {
+  width: 120px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid #cccfd4;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+  border-radius: 30px;
+  &.pending {
+    color: #ebc315;
+  }
+  &.reconciled {
+    color: #27ae60;
+  }
+  &.un-controlled {
+    color: #7f8fa4;
+  }
+}
+
+.box {
+  &.pending {
+    color: #ebc315;
+  }
+  &.reconciled {
+    color: #27ae60;
+  }
+  &.un-controlled {
+    color: #7f8fa4;
+  }
+}

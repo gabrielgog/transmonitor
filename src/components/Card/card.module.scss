@@ -1,0 +1,15 @@
+.card {
+  background: #ffffff;
+  border: 1px solid #eef8fd;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 253px;
+
+  &__title {
+    font-size: 13px;
+    line-height: 17px;
+    color: #787c90;
+  }
+}
