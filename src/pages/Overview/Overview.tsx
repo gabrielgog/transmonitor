@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from 'container/Layout/Layout';
 import Card from 'components/Card/Card';
+import Chart from 'components/Chart/Chart';
 import ItemCard from 'components/ItemCard/ItemCard';
 import Table from 'components/Table';
 import Select from 'components/Select/Select';
@@ -44,6 +45,7 @@ const Overview = () => {
           })}
         </div>
         <div className='flex'>
+          <Chart date='Today: 5, Aug 2018' />
           <div className='item__card'>
             <ItemCard order_title='Orders' type='order' pending='20' reconciled='80' total_order='100' />
             <ItemCard payment_title='Payments' unrecon_payment='20' recon_payment='80' total_payment='100' />
@@ -52,7 +54,7 @@ const Overview = () => {
         <div>
           <p className='payment'>Payments</p>
           <div className='filter__item'>
-            <span>showing </span>
+            <span>showing</span>
             <SearchBox placeholder='Search payments' />
 
             <Select

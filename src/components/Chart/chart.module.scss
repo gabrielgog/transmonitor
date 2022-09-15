@@ -1,0 +1,55 @@
+.graph {
+  background: #ffffff;
+  border: 1px solid #eef8fd;
+  border-radius: 2px;
+  width: 39rem;
+  min-height: 3rem;
+  &__months {
+    display: grid;
+    grid-template-columns: repeat(7, 0fr);
+    gap: 13%;
+    padding: 10px;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 700;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__date {
+    color: #4f4f4f;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+  }
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__toggle {
+    margin-top: 3%;
+    button {
+      background: linear-gradient(0deg, #f2f4f7 0%, #ffffff 100%);
+      border: 1px solid #ced0da;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  }
+
+  &__select {
+    padding-right: 5rem;
+    position: relative;
+    top: 2px;
+  }
+}
