@@ -18,7 +18,7 @@ const Sidebar = () => {
                                 >
 
                                     <li className={styles.wrapper__link}>
-                                        <img className={styles.wrapper__link} src={link.icon} />
+                                        <img className={styles.wrapper__link_text} src={link.icon} />
                                         <span className={styles.wrapper__link_text}>{link.title}</span>
                                     </li>
                                 </NavLink>

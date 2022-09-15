@@ -57,11 +57,13 @@ const Overview = () => {
             <span>showing</span>
             <SearchBox placeholder='Search payments' />
 
-            <Select
-              options={filterData?.map((item) => ({
-                name: item.name,
-              }))} placeholder="Filter" label='Show' />
+            <div className='filter__item-select'>
+              <Select
+                options={filterData?.map((item) => ({
+                  name: item.name,
+                }))} placeholder="Filter" label='Show' />
 
+            </div>
           </div>
           <div className='item__table'>
             <Table headers={header} tableData={requests} type="">
